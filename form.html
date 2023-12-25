@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style type="text/css">
+    body {
+      background-image: src="2.jpeg"
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    #form {
+      border-radius: 10px;
+      color: white;
+      height: 450px;
+      width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    #form table {
+      color: white;
+      width: 100%;
+    }
+
+    #form input[type="text"],
+    #form input[type="phone"],
+    #form input[type="date"] {
+      width: 80%;
+      padding: 8px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+
+    #form input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    #form select {
+      padding: 8px;
+      margin-right: 5px;
+    }
+
+    #form input[type="submit"],
+    #form input[type="reset"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #form input[type="submit"]:hover,
+    #form input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="form">
+    <form>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" placeholder="Name" name="name"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender">Male 
+            <input type="radio" name="gender">Female
+          </td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td>
+            <select>
+              <option>91</option>
+              <option>92</option>
+              <option>93</option>
+              <option>94</option>
+              <option>95</option>
+            </select>
+            <input type="phone" placeholder="9*********" name="phone">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Submit" name="submit">
+            <input type="reset" value="Reset" name="reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
